@@ -154,15 +154,16 @@
     <h2>Hardtrac Ecommerce Data and Analytics Dashboard</h2>
 </div>
     <div id="login-box">
-    <img src="https://hardtrac.co.in/wp-content/uploads/2023/03/images.png" alt="Company Logo">
+        <img src="https://hardtrac.co.in/wp-content/uploads/2023/03/images.png" alt="Company Logo">
         <form action="/login" method="post">
-        <input type="text" id="brand-name" name="brandName" placeholder="Enter brand name" required><br><br>
-        <input type="password" id="password" placeholder="Enter password" required><br><br>
-        <input type="checkbox" id="show-password">
-        <label for="show-password">Show Password</label><br><br>
-        <button type="submit">Login</button>
-        <p style="margin-top: 20px;"><strong>Note :</strong> Data uploading will be done daily between 10am and 11.30am. During this time, the reports might not show accurate data.*</p>
-    </form>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <input type="text" id="brand-name" name="brandName" placeholder="Enter brand name" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+            <input type="checkbox" id="show-password">
+            <label for="show-password">Show Password</label><br><br>
+            <button type="submit">Login</button>
+            <p style="margin-top: 20px;"><strong>Note :</strong> Data uploading will be done daily between 10am and 11.30am. During this time, the reports might not show accurate data.*</p>
+        </form>
     </div>
 
 <!-- Description points centered on the page -->
