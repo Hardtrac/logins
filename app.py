@@ -7,8 +7,8 @@ app.secret_key = secrets.token_hex(16)  # Generate a secure random key
 
 # Sample data for users and their Google Drive links
 users = {
-    'brand1': {'password': 'pass1', 'link': 'https://drive.google.com/drive/folders/abc123'},
-    'brand2': {'password': 'pass2', 'link': 'https://drive.google.com/drive/folders/def456'},
+    'vinod': {'password': '1234', 'link': 'https://docs.google.com/spreadsheets/d/1UYQQilejDaiTGhECV9FrDsL-Y1hsybluxvxPeou52B8/edit#gid=105666129'},
+    'realme': {'password': '1234', 'link': 'https://docs.google.com/spreadsheets/d/1UYQQilejDaiTGhECV9FrDsL-Y1hsybluxvxPeou52B8/edit#gid=105666129'},
     'brand3': {'password': 'pass3', 'link': 'https://drive.google.com/drive/folders/ghi789'},
     'brand4': {'password': 'pass4', 'link': 'https://drive.google.com/drive/folders/jkl012'},
     'brand5': {'password': 'pass5', 'link': 'https://drive.google.com/drive/folders/mno345'}
